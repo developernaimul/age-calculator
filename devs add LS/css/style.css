@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#solink {
+    display: block;
+}
+
+#solink a{
+    text-decoration: none;
+    color: rgb(4, 0, 255);
+    font-size: 30px;
+    padding: 5px;
+}

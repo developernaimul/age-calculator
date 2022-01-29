@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Naimul</title>
+    <!-- <link rel="shortcut icon" href="https://i.ibb.co/Jq56MXt/icon-60x60.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="Css/bootstrap.min.css">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="./products add LS/css/style.css">
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="logo">Naim</a>
+        <ul>
+            <li><a href="index.html">Age Call</a></li>
+            <li><a href="devsaddlist.html">Devs Add List</a></li>
+            <li><a href="fiverrordercounter.html">Fiverr Order Counter</a></li>
+            <li><a href="Productaddlist.html">Products Add List</a></li>
+            <li><a href="https://developernaimul.com">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="my-4 container">
+        <div class="row">
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                Add Product
+            </button>
+            
+            <!-- Modal -->
+            <div class="add modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Product Data</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- body -->
+                    <div class="form_body modal-body">
+                        <!-- form -->
+                        <form id="devs_form">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Product Name" class="form-control">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" name="image" placeholder="Product Image URL" class="form-control">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" name="regular" placeholder="Regular Price" class="form-control">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" name="sale" placeholder="Sale Price" class="form-control">
+                            </div>
+                            <br>
+                            <div>
+                                <input type="submit" class="btn btn-primary form-control" value="Add Now" data-bs-dismiss="modal">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+    </div>
+    <hr>
+    <!-- Data -->
+    <div class="container">
+        <div id="product_aria" class="row">
+            
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+    })
+    </script>
+
+
+    <script src="./Js/bootstrap.min.js"></script>
+    <script src="./products add LS/js/function.js"></script>
+    <script src="./products add LS/js/app.js"></script>
+    
+</body>
+</html>
+

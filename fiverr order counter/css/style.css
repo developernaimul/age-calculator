@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    margin: 200px auto;
+}
+#counter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#counter p {
+    flex-basis: 20%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    color: black;
+}
